@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "rpc:build": "frida-compile server/rpc/index.ts -o _rpc.js -c",
+    "rpc:watch": "frida-compile server/rpc/index.ts -o _rpc.js -w"
   },
   "dependencies": {
     "frida": "^16.6.6",
